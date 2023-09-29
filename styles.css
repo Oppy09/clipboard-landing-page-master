@@ -1,0 +1,370 @@
+html {
+    font-family: 'Bai Jamjuree';
+    font-size: 18px;
+    font-weight: 400;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+h1 {
+    font-size: 2.2em;
+}
+h2 {
+    font-size: 1.8em;
+}
+p {
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5;
+}
+a {
+    transition: all 200ms ease-in;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#top {
+    width: 100%;
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.introduction p {
+    width: 55ch;
+    margin: auto;
+}
+.cta {
+    display: flex;
+    gap: 1rem;
+    margin: auto;
+}
+.cta a {
+    color: #fff;
+    padding: .75rem;
+    border-radius: 30px;
+    font-weight: 600;
+    width: 12rem;
+}
+.cta a:nth-child(1) {
+    background-color: hsl(171, 66%, 44%);
+}
+.cta a:nth-child(1):hover {
+    background-color: hsla(171, 66%, 44%, 70%);
+}
+.cta a:nth-last-child(1) {
+    background-color: hsl(233, 100%, 69%);
+}
+.cta a:nth-last-child(1):hover {
+    background-color: hsla(233, 100%, 69%, 70%);
+}
+
+#middle {
+    width: 100%;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.heading p {
+    width: 60ch;
+    margin: auto;
+}
+.first-content {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    overflow: hidden;
+}
+.first-content .illustration {
+    position: relative;
+    right: 2rem;
+    width: 100%;
+}
+.first-content .illustration img {
+    width: 100%;
+}
+.second-content .illustration img {
+    max-width: 100%;
+}
+.body {
+    padding: 3rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.quick-search {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.quick-search p {
+    width: 60%;
+}
+.cloud-sync {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cloud-sync p {
+    width: 60%;
+}
+.complete-history {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.complete-history p {
+    width: 60%;
+}
+.second-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.contents {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.create-blacklists {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.create-blacklists p {
+    width: 80%;
+    margin: auto;
+}
+.text-snippets {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.text-snippets p {
+    width: 80%;
+    margin: auto;
+}
+.sneak-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sneak-preview p {
+    width: 80%;
+    margin: auto;
+}
+.sponsors {
+    width: 100%;
+    padding: 0 4rem;
+    margin: 2rem auto;
+    display: grid;
+    grid-auto-flow: column;
+}
+.devices {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.devices p {
+    width: 60ch;
+    margin: auto;
+}
+footer {
+    width: 100%;
+    background-color: hsla(201, 11%, 66%, 10%);
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-links {
+    display: flex;
+    text-align: left;
+    gap: 7rem;
+}
+.footer-links > span {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-links li {
+    list-style: none;
+}
+.footer-links li a {
+    color: hsl(210, 10%, 33%);
+}
+.footer-links li a:hover {
+    color: hsl(171, 66%, 44%);
+}
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.facebook {
+    transition: all 100ms ease-in;
+}
+.facebook:hover {
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+.twitter {
+    transition: all 100ms ease-in;
+}
+.twitter:hover {
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+.instagram {
+    transition: all 100ms ease-in;
+}
+.instagram:hover {
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+
+@media (min-width: 600px) and (max-width: 968px) {
+    .quick-search p {
+        width: 100%;
+    }
+    .cloud-sync p {
+        width: 100%;
+    }
+    .complete-history p {
+        width: 100%;
+    }
+    .sponsors {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    footer {
+        padding: 0;
+    }
+    .footer-links {
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 2em;
+    }
+    #top {
+        padding: 3rem .5rem;
+    }
+    .introduction p {
+        width: 100%;
+    }
+    .cta {
+        width: 100%;
+        flex-direction: column;
+    }
+    .cta a {
+        width: 100%;
+    }
+    #middle {
+        padding: 2rem .5rem;
+    }
+    .heading p {
+        width: 100%;
+    }
+    .first-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-content .illustration {
+        right: 0;
+    }
+    .body {
+        padding: 2rem .5rem;
+    }
+    .quick-search {
+        text-align: center;
+    }
+    .quick-search p {
+        width: 100%;
+    }
+    .cloud-sync {
+        text-align: center;
+    }
+    .cloud-sync p {
+        width: 100%;
+    }
+    .complete-history {
+        text-align: center;
+    }
+    .complete-history p {
+        width: 100%;
+    }
+    .contents {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 1rem .5rem;
+    }
+    .create-blacklists p {
+        width: 100%;
+    }
+    .text-snippets p {
+        width: 100%;
+    }
+    .sneak-preview p {
+        width: 100%;
+    }
+    .sponsors {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .devices {
+        padding: 5rem .5rem;
+    }
+    .devices p {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    .footer-links > span {
+        gap: 2rem;
+    }
+    .socials {
+        gap: 2rem;
+    }
+}
